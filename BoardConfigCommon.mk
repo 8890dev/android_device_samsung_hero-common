@@ -53,6 +53,7 @@ TARGET_USES_64_BIT_BINDER := true
 
 # no hardware camera
 USE_CAMERA_STUB := true
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 BOARD_USE_SAMSUNG_CAMERAFORMAT_NV21 := true
 
 # Bootloader
