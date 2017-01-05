@@ -74,6 +74,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+# Package
+BLOCK_BASED_OTA := false
+
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_RECOVERY_SWIPE := true
@@ -90,6 +93,7 @@ KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64
 
 # Boot/Recovery Image
 BOARD_KERNEL_SEPARATED_DT := true
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/universal8890/mkbootimg.mk
 TARGET_CUSTOM_DTBTOOL := dtbToolExynos
 
 # SELinux

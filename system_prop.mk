@@ -85,14 +85,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
 
-# Radio
+# RIL
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.multisim.simslotcount=2 \
     rild.libpath=/system/lib64/libsec-ril.so \
-    rild.libargs=-d /dev/ttyS0 \
-    ro.telephony.ril_class=heroRIL \
-    telephony.lteOnGsmDevice=1 \
-    ro.telephony.default_network=9 \
-    ro.use_data_netmgrd=false \
-    persist.data.netmgrd.qos.enable=false \
-    ro.ril.hsxpa=1 \
-    ro.ril.gprsclass=10 \
+    rild.libpath2=/system/lib64/libsec-ril-dsds.so
