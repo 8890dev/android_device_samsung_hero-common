@@ -87,5 +87,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.multisim.simslotcount=2 \
+    ro.telephony.mms_data_profile=5 \
     rild.libpath=/system/lib64/libsec-ril.so \
     rild.libpath2=/system/lib64/libsec-ril-dsds.so
