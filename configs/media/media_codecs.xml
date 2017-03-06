@@ -272,6 +272,12 @@ Only the three quirks included above are recognized at this point:
             <Quirk name="needs-flush-before-disable" />
             <Quirk name="decoder-ignores-streamcorrupt-error" />
         </MediaCodec>
+
+        <!-- This device is licensed -->
+        <MediaCodec name="OMX.ffmpeg.ac3.decoder" type="audio/ac3" >
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="8000-192000" />
+        </MediaCodec>
     </Decoders>
 
     <Encoders>
