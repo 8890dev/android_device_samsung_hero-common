@@ -23,4 +23,9 @@
     <!-- Threshold in micro watts below which a charger is rated as "slow"; 1A @ 5V -->
     <integer name="config_chargingSlowlyThreshold">0</integer>
 
+    <!-- Should we listen for fingerprints when the screen is off?  Devices
+         with a rear-mounted sensor want this, but certain devices have
+         the sensor embedded in the power key and listening all the time
+         causes a poor experience. -->
+    <bool name="config_fingerprintWakeAndUnlock">false</bool>
 </resources>
