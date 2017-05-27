@@ -18,6 +18,22 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy S7 Edge"
+#include <cutils/properties.h>
+#include <string.h>
+
+inline const char* BtmGetDefaultName()
+{
+	char product_name[PROPERTY_VALUE_MAX];
+	property_get("ro.product.name", product_name, "");
+	
+	if (strstr(product_name, "herolte"))
+		return "Samsung Galaxy S7";
+	if (strstr(product_name, "hero2lte"))
+		return "Samsung Galaxy S7 Edge";
+	
+	return "";
+}
+
+#define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 
 #endif
