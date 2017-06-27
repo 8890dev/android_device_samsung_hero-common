@@ -71,6 +71,10 @@ TARGET_AUDIOHAL_VARIANT := samsung
 TARGET_POWERHAL_VARIANT := samsung
 TARGET_SEC_FP_HAL_VARIANT := bauth
 
+# Samsung Hardware
+BOARD_HARDWARE_CLASS += device/samsung/hero-common/cmhw
+BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
+
 # Wifi
 TARGET_USES_64_BIT_BCMDHD        := true
 BOARD_WLAN_DEVICE                := bcmdhd
