@@ -75,6 +75,16 @@ TARGET_SEC_FP_HAL_VARIANT := bauth
 BOARD_HARDWARE_CLASS += device/samsung/hero-common/cmhw
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 
+# Samsung Camera
+BOARD_USE_SAMSUNG_CAMERAFORMAT_NV21 := true
+
+# Graphics
+USE_OPENGL_RENDERER := true
+
+# Renderscript
+BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53.a57
+BOARD_OVERRIDE_RS_CPU_VARIANT_64 := exynos-m1
+
 # Wifi
 TARGET_USES_64_BIT_BCMDHD        := true
 BOARD_WLAN_DEVICE                := bcmdhd
