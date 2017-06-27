@@ -167,3 +167,8 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     lights.universal8890
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    fingerprintd \
+    fingerprint.exynos5
