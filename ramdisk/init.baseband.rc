@@ -76,11 +76,10 @@ service modemloader /system/bin/modemloader
     class core
     oneshot
 
-service cpboot-daemon /sbin/cbd -d -tss310 -bm -mm -P platform/155a0000.ufs/by-name/RADIO
+service cpboot-daemon /system/bin/cbd -d -tss310 -bm -mm -P platform/155a0000.ufs/by-name/RADIO
     class main
     user root
     group radio cache inet misc audio sdcard_rw log sdcard_r shell
-    seclabel u:r:cbd:s0
     disabled
 
 on property:ro.modemloader.done=1
