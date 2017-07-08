@@ -1,0 +1,8 @@
+# /dev/m2m1shot_jpeg
+allow cameraserver camera_device:chr_file rw_file_perms;
+
+# /sys/devices/virtual/camera/*/*_camfw
+allow cameraserver sysfs_camera_writable:file { read open getattr };
+
+# searching for syses nodes
+allow cameraserver sysfs_camera_writable:dir search;
