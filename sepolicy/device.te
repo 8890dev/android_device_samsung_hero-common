@@ -21,3 +21,6 @@ type bbd_device, dev_type;
 
 # /dev/vfsspi
 type fingerprint_device, dev_type;
+
+# /dev/batch_io
+type sensor_device, dev_type;
